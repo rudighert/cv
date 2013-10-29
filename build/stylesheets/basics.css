@@ -1,0 +1,30 @@
+/* line 3, /Users/iMac/Documents/middleman_project/cv/source/stylesheets/basics.scss */
+html {
+  min-height: 100%; }
+
+/* line 6, /Users/iMac/Documents/middleman_project/cv/source/stylesheets/basics.scss */
+header, #header {
+  background-color: #f1c40f;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 20px 0;
+  text-align: center;
+  text-shadow: 0 0 3px gray; }
+
+/* line 15, /Users/iMac/Documents/middleman_project/cv/source/stylesheets/basics.scss */
+footer, #footer {
+  background-color: #d35400;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 20px 0;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; }
+
+/* line 27, /Users/iMac/Documents/middleman_project/cv/source/stylesheets/basics.scss */
+body {
+  background: #ECF0F1; }

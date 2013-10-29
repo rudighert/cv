@@ -2,6 +2,7 @@
 
 html{
   min-height: 100%;
+  -webkit-font-smoothing:antialiased!important;
 }
 header, #header{
   background-color: #f1c40f;
@@ -26,4 +27,86 @@ footer, #footer{
 }
 body{
   background: #ECF0F1;
+  color: #4d4d4d;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.wrapper{
+  width: 1000px;
+  margin: 40px auto;
+  background-color: white;
+  font-size: 0;
+  @include border-radius(5px);
+  @include box-shadow(0 0 3px gray);
+}
+.bold{font-weight: bold}
+.light{font-weight: lighter}
+
+.area_name{
+  background: #34495e;
+  text-align: center;
+  padding: 20px 0;
+
+  .top_name{
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 5px 0;
+  }
+
+  .profesion{
+    font-size: 24px;
+    color: white;
+    font-weight: normal;
+    margin: 10px 0;
+  }
+}
+
+.column{
+  padding: 30px 20px;
+  min-height: 400px;
+  font-size: 16px;
+  font-weight: lighter;
+  @include box-sizing(border-box);
+
+  &.left{width: 30%; text-align: right}
+  &.right{width: 70%;}
+  @include inline-block(top);
+}
+
+.title_left{
+  font-weight: bold;
+  margin: 5px 0;
+  text-transform: uppercase;
+  color: #4d4d4d;
+  font-size: 20px;
+}
+
+.title_right{
+  font-weight: bold;
+  margin: 5px 0;
+  text-transform: uppercase;
+  color: #4d4d4d;
+  font-size: 24px;
+  .blue{
+    color: #67dff1;
+  }
+}
+
+
+.box_activity{
+  font-size: 0;
+
+  .date, .content_description{
+    @include inline-block(top);
+    @include box-sizing(border-box);
+  }
+  .date{
+    width: 17%;
+    font-size: 16px;
+  }
+  .content_description{
+    width: 83%;
+    font-size: 16px;
+  }
 }

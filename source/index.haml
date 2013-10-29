@@ -1,1 +1,34 @@
-%h1 Template created by Rudighert Schalchli
+.area_name
+  %h1.top_name
+    %span Rudighert
+    %span.light Schalchli
+  %h2.profesion Ingeniero Civil en Informática y Telecomunicaciones
+
+
+.column.left
+  %h2.title_left Dirección
+  %p Avda. Colón 3963
+  %p Las Condes, Santiago, Chile
+
+  %h2.title_left Contacto
+  %p +56 9 776 659 55
+  %p rudighert@gmail.com
+  %p rudighert.com
+  %p storeming.com
+
+  %h2.title_left Programming
+  %p Ruby on Rails, JavaScript, Haml, CSS3, PHP, HTML5, Objective C, C++
+
+
+
+
+.column.right
+  -title ="<span class='blue'>Edu</span><span>cación</span>"
+  %h2.title_right= title
+  .box_activity
+    .date 1992-2004
+    .content_description
+      -title = "<span>Educación</span><span class='bold'> Básica y Media</span>"
+      .title=title
+      .text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

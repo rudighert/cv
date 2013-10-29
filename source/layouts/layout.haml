@@ -8,8 +8,6 @@
     = stylesheet_link_tag "all"
     = javascript_include_tag  "all"
 
-
   %body
-    =render(:haml, 'layouts/header')
-    =yield
-    =render(:haml, 'layouts/footer')
+    .wrapper
+      =yield
