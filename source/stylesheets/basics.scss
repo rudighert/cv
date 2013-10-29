@@ -1,0 +1,29 @@
+@import 'compass';
+
+html{
+  min-height: 100%;
+}
+header, #header{
+  background-color: #f1c40f;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 20px 0;
+  text-align: center;
+  @include text-shadow(0 0 3px gray);
+}
+footer, #footer{
+  background-color: #d35400;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 20px 0;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+body{
+  background: #ECF0F1;
+}
