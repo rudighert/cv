@@ -1,8 +1,9 @@
 /* line 3, /Users/iMac/Documents/middleman_project/cv/source/stylesheets/basics.scss */
 html {
-  min-height: 100%; }
+  min-height: 100%;
+  -webkit-font-smoothing: antialiased !important; }
 
-/* line 6, /Users/iMac/Documents/middleman_project/cv/source/stylesheets/basics.scss */
+/* line 7, /Users/iMac/Documents/middleman_project/cv/source/stylesheets/basics.scss */
 header, #header {
   background-color: #f1c40f;
   color: white;
@@ -12,7 +13,7 @@ header, #header {
   text-align: center;
   text-shadow: 0 0 3px gray; }
 
-/* line 15, /Users/iMac/Documents/middleman_project/cv/source/stylesheets/basics.scss */
+/* line 16, /Users/iMac/Documents/middleman_project/cv/source/stylesheets/basics.scss */
 footer, #footer {
   background-color: #d35400;
   color: white;
@@ -25,6 +26,114 @@ footer, #footer {
   left: 0;
   width: 100%; }
 
-/* line 27, /Users/iMac/Documents/middleman_project/cv/source/stylesheets/basics.scss */
+/* line 28, /Users/iMac/Documents/middleman_project/cv/source/stylesheets/basics.scss */
 body {
-  background: #ECF0F1; }
+  background: #ECF0F1;
+  color: #4d4d4d;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+
+/* line 34, /Users/iMac/Documents/middleman_project/cv/source/stylesheets/basics.scss */
+.wrapper {
+  width: 1000px;
+  margin: 40px auto;
+  background-color: white;
+  font-size: 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 3px gray;
+  -moz-box-shadow: 0 0 3px gray;
+  box-shadow: 0 0 3px gray; }
+
+/* line 42, /Users/iMac/Documents/middleman_project/cv/source/stylesheets/basics.scss */
+.bold {
+  font-weight: bold; }
+
+/* line 43, /Users/iMac/Documents/middleman_project/cv/source/stylesheets/basics.scss */
+.light {
+  font-weight: lighter; }
+
+/* line 45, /Users/iMac/Documents/middleman_project/cv/source/stylesheets/basics.scss */
+.area_name {
+  background: #34495e;
+  text-align: center;
+  padding: 20px 0; }
+  /* line 50, /Users/iMac/Documents/middleman_project/cv/source/stylesheets/basics.scss */
+  .area_name .top_name {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 5px 0; }
+  /* line 57, /Users/iMac/Documents/middleman_project/cv/source/stylesheets/basics.scss */
+  .area_name .profesion {
+    font-size: 24px;
+    color: white;
+    font-weight: normal;
+    margin: 10px 0; }
+
+/* line 65, /Users/iMac/Documents/middleman_project/cv/source/stylesheets/basics.scss */
+.column {
+  padding: 30px 20px;
+  min-height: 400px;
+  font-size: 16px;
+  font-weight: lighter;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline; }
+  /* line 72, /Users/iMac/Documents/middleman_project/cv/source/stylesheets/basics.scss */
+  .column.left {
+    width: 30%;
+    text-align: right; }
+  /* line 73, /Users/iMac/Documents/middleman_project/cv/source/stylesheets/basics.scss */
+  .column.right {
+    width: 70%; }
+
+/* line 77, /Users/iMac/Documents/middleman_project/cv/source/stylesheets/basics.scss */
+.title_left {
+  font-weight: bold;
+  margin: 5px 0;
+  text-transform: uppercase;
+  color: #4d4d4d;
+  font-size: 20px; }
+
+/* line 85, /Users/iMac/Documents/middleman_project/cv/source/stylesheets/basics.scss */
+.title_right {
+  font-weight: bold;
+  margin: 5px 0;
+  text-transform: uppercase;
+  color: #4d4d4d;
+  font-size: 24px; }
+  /* line 91, /Users/iMac/Documents/middleman_project/cv/source/stylesheets/basics.scss */
+  .title_right .blue {
+    color: #67dff1; }
+
+/* line 97, /Users/iMac/Documents/middleman_project/cv/source/stylesheets/basics.scss */
+.box_activity {
+  font-size: 0; }
+  /* line 100, /Users/iMac/Documents/middleman_project/cv/source/stylesheets/basics.scss */
+  .box_activity .date, .box_activity .content_description {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  /* line 104, /Users/iMac/Documents/middleman_project/cv/source/stylesheets/basics.scss */
+  .box_activity .date {
+    width: 17%;
+    font-size: 16px; }
+  /* line 108, /Users/iMac/Documents/middleman_project/cv/source/stylesheets/basics.scss */
+  .box_activity .content_description {
+    width: 83%;
+    font-size: 16px; }

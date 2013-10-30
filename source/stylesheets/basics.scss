@@ -31,6 +31,10 @@ body{
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
+a{
+  color: #4d4d4d;
+}
+
 .wrapper{
   width: 1000px;
   margin: 40px auto;
@@ -88,14 +92,15 @@ body{
   text-transform: uppercase;
   color: #4d4d4d;
   font-size: 24px;
-  .blue{
-    color: #67dff1;
-  }
+  .blue{color: #3498db;}
+  .orange{color: #e67e22;}
+  .wisteria{color: #8e44ad;}
 }
 
 
 .box_activity{
   font-size: 0;
+  margin: 25px 0;
 
   .date, .content_description{
     @include inline-block(top);
@@ -108,5 +113,34 @@ body{
   .content_description{
     width: 83%;
     font-size: 16px;
+    padding: 0 10px;
+    .text{
+      padding: 5px 0;
+    }
+    &.particular{
+      padding: 0;
+    }
   }
 }
+
+.item_left{
+  font-size: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  @include inline-block;
+  &:before{
+    width: 20px;
+    height: 15px;
+    content: '';
+    @include inline-block(top);
+  }
+  &.wallet:before{background: asset-url('icon/wallet.png',image) no-repeat;}
+  &.home:before{background: asset-url('icon/home.png',image) no-repeat;}
+  &.birthday:before{background: asset-url('icon/birthday.png',image) no-repeat;}
+  &.sex:before{background: asset-url('icon/sex.png',image) no-repeat;}
+  &.phone:before{background: asset-url('icon/phone.png',image) no-repeat;}
+  &.email:before{background: asset-url('icon/email.png',image) no-repeat;}
+  &.twitter:before{background: asset-url('icon/twitter.png',image) no-repeat;}
+}
+
+

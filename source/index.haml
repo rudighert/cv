@@ -6,18 +6,19 @@
 
 
 .column.left
-  %h2.title_left Dirección
-  %p Avda. Colón 3963
-  %p Las Condes, Santiago, Chile
+  %h2.title_left Personal
+  .item_left.wallet 16.329.005-7
+  .item_left.home Avda. Colón 3963, Las Condes, Santiago, Chile
+  .item_left.birthday 13 de septiembre 1986 (27 años)
+  .item_left.sex Masculino
 
   %h2.title_left Contacto
-  %p +56 9 776 659 55
-  %p rudighert@gmail.com
-  %p rudighert.com
-  %p storeming.com
+  .item_left.phone +56 9 776 659 55
+  .item_left.email rudighert@gmail.com
+  .item_left.twitter @rudighert
 
   %h2.title_left Programming
-  %p Ruby on Rails, JavaScript, Haml, CSS3, PHP, HTML5, Objective C, C++
+  .item_left Ruby on Rails, JavaScript, Haml, CSS3, PHP, HTML5, Objective C, C++, Java, Codeigniter, Mysql, MongoDB
 
 
 
@@ -30,5 +31,115 @@
     .content_description
       -title = "<span>Educación</span><span class='bold'> Básica y Media</span>"
       .title=title
-      .text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      .text Colegio Adventista de Calama.
+
+  .box_activity
+    .date 2005-2006
+    .content_description
+      -title = "<span>Ingeniería civil en</span><span class='bold'> Telemática</span>"
+      .title=title
+      .text Universidad de las Américas
+
+  .box_activity
+    .date 2006-2012
+    .content_description
+      -title = "<span>Ingeniería civil en</span><span class='bold'> Informática y Telecomunicaciones</span>"
+      .title=title
+      .text Universidad Diego Portales
+
+
+  -title ="<span class='orange'>Exp</span><span>eriencia</span>"
+  %h2.title_right= title
+
+  .box_activity
+    .date 2012 a la fecha
+    .content_description
+      -title = "<span>Trabajador</span><span class='bold'> Front-end</span>"
+      .title=title
+      .text Bufys SPA.
+      .description
+        Co-Founder. Encargado del Front-end de los dos proyectos principales de la empresa
+        %a{href:"www.bufys.com"} Bufys
+        y
+        %a{href: "www.pivto.com"} Pivto.
+
+
+
+  .box_activity
+    .date 2012
+    .content_description
+      -title = "<span>Tesis</span><span class='bold'> Profesional</span>"
+      .title=title
+      .text Universidad Diego Portales
+      .description
+        Sistema de recomendación de productos de supermercados a través de una interfaz móvil mediante reconocimiento de patrones.
+
+
+  .box_activity
+    .date 2011-2012
+    .content_description
+      -title = "<span>Trabajador</span><span class='bold'> Freelance</span>"
+      .title=title
+      .text Kimberly Clark Chile
+      .description
+        Mantención y desarrollo del sitio "kintukelo". Gestión de proyectos tecnológicos de necesidad de la empresa.
+
+  .box_activity
+    .date 2010
+    .content_description
+      -title = "<span>Práctica</span><span class='bold'> Profesional II</span>"
+      .title=title
+      .text Kimberly Clark Chile
+      .description
+        Diseño y arquitectura del portal web dedicado a la gestión de personal y análisis de información, gráficos y datos. Front-end & Back-end. Uso interno de la empresa.
+        %a{href: "www.kintukelo.cl"} www.kintukelo.cl
+
+
+  .box_activity
+    .date 2009
+    .content_description
+      -title = "<span>Práctica</span><span class='bold'> Profesional I</span>"
+      .title=title
+      .text Codelco, División Radomiro Tomic
+      .description Diseño y arquitectura de un portal web dedicado a la gestión de documentos digitales. Front-end & Back-end. Uso interno de la empresa.
+
+  -title ="<span class='wisteria'>Par</span><span>ticulares</span>"
+  %h2.title_right= title
+
+
+
+
+
+
+  .box_activity
+    .content_description.particular
+      -title = "<span>Página</span><span class='bold'> Móvil</span>"
+      .title=title
+      .description
+        Página para aplicación del personal, optimizada para dispositivos móviles.
+        %a{href: "app.patersoncooke.com"} Paterson & Cooke.
+
+  .box_activity
+    .content_description.particular
+      -title = "<span>Página</span><span class='bold'> Web</span>"
+      .title=title
+      .description
+        Página a medida para
+        %a{href: "www.exoluz.cl"} Exoluz ltda.
+
+
+  .box_activity
+    .content_description.particular
+      -title = "<span>Software</span><span class='bold'> Java</span>"
+      .title=title
+      .description
+        Software a la medida solicitado por el gimnasio
+        %a{href: "www.fitnessport.cl"}fitnessport
+        Control de ingreso de clientes, análisis de información y mantención.
+
+  .box_activity
+    .content_description.particular
+      -title = "<span>Página</span><span class='bold'> Web</span>"
+      .title=title
+      .description
+        Antigüo website de Seguros Magallanes en Antofagasta
